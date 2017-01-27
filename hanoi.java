@@ -61,15 +61,5 @@ class Main {
 
         initialize(n);
         printPiles();
-
-        moveOne(0, 2); printPiles();
-        moveOne(0, 1); printPiles();
-        moveOne(2, 1); printPiles();
-
-        moveOne(0, 2); printPiles();
-
-        moveOne(1, 0); printPiles();
-        moveOne(1, 2); printPiles();
-        moveOne(0, 2); printPiles();
     }
 }
