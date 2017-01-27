@@ -41,5 +41,8 @@ class Main {
         int n = 100;
 
         System.out.println(n);
+
+        initialize(n);
+        printPiles();
     }
 }
