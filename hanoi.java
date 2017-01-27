@@ -9,6 +9,20 @@ class Main {
     */
     static List<LinkedList<Integer>> piles;
 
+    static void initialize(int n) {
+        piles = new LinkedList<>();
+
+        // 3 本の杭を作る
+        for (int i = 0; i < 3; i++) {
+            piles.add(new LinkedList<>());
+        }
+
+        // 0 番の杭に n 枚の円盤を追加する
+        for (int i = n; i > 0; i--) {
+            piles.get(0).add(i);
+        }
+    }
+
     public static void main(String[] args) {
         int n = 100;
 
