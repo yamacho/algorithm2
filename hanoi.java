@@ -61,5 +61,7 @@ class Main {
 
         initialize(n);
         printPiles();
+
+        hanoi(n, 0, 2, 1);
     }
 }
