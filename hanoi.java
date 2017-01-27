@@ -23,6 +23,20 @@ class Main {
         }
     }
 
+    static void printPiles() {
+        System.out.println("--");
+
+        for (int i = 0; i < 3; i++) {
+            System.out.print(i + ":");
+
+            for (int disk : piles.get(i)) {
+                System.out.print(" " + disk);
+            }
+
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int n = 100;
 
