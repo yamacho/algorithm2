@@ -8,6 +8,7 @@ class Main {
       名前なし : 円盤の大きさを整数で表す
     */
     static List<LinkedList<Integer>> piles;
+    static int count;
 
     static void initialize(int n) {
         piles = new LinkedList<>();
