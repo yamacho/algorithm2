@@ -29,6 +29,17 @@ class Main {
         piles.get(to).add(disk);
     }
 
+    static void hanoi(int n, int from, int to, int work) {
+        if (n == 0) {
+            return;
+        }
+
+        hanoi(n - 1, from, work, to);
+        moveOne(from, to);
+        printPiles();
+        hanoi(n - 1, to, work, from);
+    }
+
     static void printPiles() {
         System.out.println("--");
 
