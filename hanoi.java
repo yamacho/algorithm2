@@ -12,6 +12,7 @@ class Main {
 
     static void initialize(int n) {
         piles = new LinkedList<>();
+        count = 0;
 
         // 3 本の杭を作る
         for (int i = 0; i < 3; i++) {
