@@ -23,6 +23,12 @@ class Main {
         }
     }
 
+    static void moveOne(int from, int to) {
+        int disk = piles.get(from).removeLast();
+
+        piles.get(to).add(disk);
+    }
+
     static void printPiles() {
         System.out.println("--");
 
