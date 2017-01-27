@@ -29,6 +29,7 @@ class Main {
         int disk = piles.get(from).removeLast();
 
         piles.get(to).add(disk);
+        count++;
     }
 
     static void hanoi(int n, int from, int to, int work) {
