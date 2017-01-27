@@ -50,5 +50,8 @@ class Main {
 
         initialize(n);
         printPiles();
+
+        moveOne(0, 2);
+        printPiles();
     }
 }
