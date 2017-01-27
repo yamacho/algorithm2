@@ -44,6 +44,7 @@ class Main {
 
     static void printPiles() {
         System.out.println("--");
+        System.out.println("count :" + count);
 
         for (int i = 0; i < 3; i++) {
             System.out.print(i + ":");
