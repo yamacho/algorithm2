@@ -55,10 +55,22 @@ class Main {
             return;
         }
 
-        hanoi(n - 1, from, work, to);
-        moveOne(from, to);
-        // printPiles();
-        hanoi(n - 1, to, work, from);
+        if (count + (Math.pow(2, n) - 1) <= target) {
+            // まとめて移動
+            movePart(n, from, to);
+            count += Math.pow(2, n) - 1;
+
+            if (count == target) {
+                printPiles();
+                System.exit(0);
+            }
+        } else {
+            // 再帰で移動
+            hanoi(n - 1, from, work, to);
+            moveOne(from, to);
+            // printPiles();
+            hanoi(n - 1, to, work, from);
+        }
     }
 
     static void printPiles() {
