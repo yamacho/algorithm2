@@ -9,6 +9,7 @@ class Main {
     */
     static List<LinkedList<Integer>> piles;
     static int count;
+    static int target;
 
     static void initialize(int n) {
         piles = new LinkedList<>();
