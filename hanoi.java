@@ -89,9 +89,9 @@ class Main {
     }
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 30;
 
-        target = 1;
+        target = 1000000000;
         if (target <= Math.pow(2, n) - 1) {
             System.out.println(n);
         } else {
