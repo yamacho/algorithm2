@@ -67,7 +67,13 @@ class Main {
     public static void main(String[] args) {
         int n = 3;
 
-        System.out.println(n);
+        target = 1;
+        if (target <= Math.pow(2, n) - 1) {
+            System.out.println(n);
+        } else {
+            System.out.println("Too big:" + (int)(Math.pow(2, n) - 1));
+            System.exit(1);
+        }
 
         initialize(n);
         printPiles();
