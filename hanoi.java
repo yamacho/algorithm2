@@ -38,6 +38,18 @@ class Main {
         }
     }
 
+    static void movePart(int num, int from, int to) {
+        LinkedList<Integer> temp = new LinkedList<>();
+
+        for (int i = 0; i < num; i++) {
+            int disk = piles.get(from).removeLast();
+
+            temp.addFirst(disk);
+        }
+
+        piles.get(to).addAll(temp);
+    }
+
     static void hanoi(int n, int from, int to, int work) {
         if (n == 0) {
             return;
