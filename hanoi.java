@@ -31,6 +31,11 @@ class Main {
 
         piles.get(to).add(disk);
         count++;
+
+        if (count == target) {
+            printPiles();
+            System.exit(0);
+        }
     }
 
     static void hanoi(int n, int from, int to, int work) {
