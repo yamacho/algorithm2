@@ -45,7 +45,7 @@ class Main {
 
         hanoi(n - 1, from, work, to);
         moveOne(from, to);
-        printPiles();
+        // printPiles();
         hanoi(n - 1, to, work, from);
     }
 
